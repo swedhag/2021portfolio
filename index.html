@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Carl Svedhag">
+  <title>Carl Svedhag - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="max-width">
+      <div class="logo"><a href="#home"><span>Portfolio</span>.</a></div>
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+         <!--<li><a href="#">Services</a></li>-->
+        <li><a href="#services">Projects</a></li>
+         <!--<li><a href="#">Teams</a></li>-->
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!--Home Section-->
+  <section class="home" id="home">
+    <div class="max-width">
+        <div class="home-content">
+              <div class="text-1">Hello, my name is</div>
+              <div class="text-2">Carl Svedhag</div>
+              <div class="text-3">and I'm a <span class="typing"></span></div>
+        </div>
+    </div>
+  </section>
+
+    <!--About Section-->
+    <section class="about" id="about">
+      <div class="max-width">
+        <h2 class="title">About me</h2>
+        <div class="about-content">
+          <div class="column left">
+            <img src="images/calle.png" alt="profile-pic">
+          </div>
+          <div class="column right">
+            <div class="text">I'm Calle and I'm a <span class="typing2"></span></div>
+            <p>I'm a 25 year old Swedish engineer with a passion for technology, coding and engaging in meaningful work alongside other people. 
+              My academic intrest in science and technology started early and has gradually been increasing since my start at the natural sciences programme at the prestigeous Norra Real 
+              high school in the city centre of Stockholm. Following my time at Norra Real, I moved location a couple of blocks to the northwest to attend the media technology programme at the
+              Royal Institute of Technology (KTH.) At KTH, I have acquired a multitude of skills relating to media technology, human-computer interaction and user experience (UX.) Projects I have been
+              apart of spans everything from web development and interaction design to information visualization, augmented reality, computer graphics, image- and video processing etc. In the spring of 2021,
+              I finally received my Degree of Master of Science with a major in Computer Science and Engineering. Below, you find some examples of my previous work!
+
+              In my spare time, I enjoy either watching or playing a friendly game of football, practice my guitar-playing or to simply lean back in the sofa and watch a good movie. I played
+              football competitevly  
+            </p>
+            <a href="#">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Services Section-->
+    <section class="services" id="services">
+      <div class="max-width">
+        <h2 class="title">Projects</h2>
+        <div class="serv-content">
+
+          <!--jobVis-->
+          <div id="jobVis" class="card">
+            <div class="box">
+              <div class="text">jobVis</div>
+              <p>Web application</p>
+            </div>
+            <img src="images/project-thumbnails/jobVis.png" alt="jobVis" class="thumbnail">
+            <div class="modal">
+              <div class="modal-content">
+                <div class="close"><i class="fas fa-times"></i></div>
+                  <div class="modal-media">
+                    <div class="iframe-container">
+                      <iframe src="https://www.youtube.com/embed/oab5VxdsL1k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <h2>jobVis - Information visualization</h2>
+                  <div class="modal-text">
+                    <p>My team and I, who had been asked to develop and design a fully functioning analysis tool for the sales department at Blocket Jobb, made this service in the spring of 2019. The intended use of the tool is to map the quantity of employment ads posted on Blocket Jobb to its corresponding geographical location. Filtering of this data can be done through line of businesses and sub-categories of lines - as well as by trends in employment ads over time. Two modes of comparison is made available by the analysis tool. Users can either filter the data by ads posted over a time span, or by ad post derivatives over a time span. This project was developed with JavaScript and D3.js.</p>
+                    <div class="modal-meta">
+                      <div class="tools">
+                        <h3>Tools</h3>
+                        <ul>
+                          <li><img src="images/logos/html.svg" alt="html"><span>HTML</span></li>
+                          <li><img src="images/logos/css.svg" alt="css"><span>CSS</span></li>
+                          <li><img src="images/logos/js.svg" alt="js"><span>JavaScript</span></li>
+                          <li><img src="images/logos/jquery.png" alt="jquery"><span>jQuery</span></li>
+                          <li><img src="images/logos/d3.png" alt="d3"><span>d3.js</span></li>
+                        </ul>                
+                      </div>
+                      <div class="links">
+                        <h3>Links</h3>
+                        <ul>
+                          <a href="https://fstal.github.io/jobVis/" target="_blank"><li>Live demo</li></a>
+                          <a href="https://github.com/fstal/jobVis" target="_blank"><li>GitHub</li></a>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <!--World Values Survey Visualization-->
+          <div id="wvs" class="card">
+            <div class="box">
+              <div class="text">World Values Survey Visualization</div>
+              <p>Web application</p>
+            </div>
+            <img src="images/project-thumbnails/wvs.png" alt="wvs" class="thumbnail">
+            <div class="modal">
+              <div class="modal-content">
+                <div class="close"><i class="fas fa-times"></i></div>
+                  <div class="modal-media">
+                    <img src="images/project-big/wvsBig.png" alt="wvs.big">
+                  </div>
+                  <h2>World Values Survey visualization</h2>
+                  <div class="modal-text">
+                    <p>For this project, I was interested in investigating the political, but also cultural climate of the countries included in the WVS (World Values Survey). A good dataset, spanning the 4 latest documented waves, or time periods, of the WVS was the one regarding active memberships in voluntary organizations. The project visualizes multivariate data, for which an appropriate visualization method is the parallel coordinate system. The interactive visualization supports both filtering by brushing and by using the search bar. Detailed information about each country is made available upon clicking a country's name. This project was developed with JavaScript and D3.js.</p>
+                    <div class="modal-meta">
+                      <div class="tools">
+                        <h3>Tools</h3>
+                        <ul>
+                          <li><img src="images/logos/html.svg" alt="html"><span>HTML</span></li>
+                          <li><img src="images/logos/css.svg" alt="css"><span>CSS</span></li>
+                          <li><img src="images/logos/js.svg" alt="js"><span>JavaScript</span></li>
+                          <li><img src="images/logos/d3.png" alt="d3"><span>d3.js</span></li>
+                        </ul>                
+                      </div>
+                      <div class="links">
+                        <h3>Links</h3>
+                        <ul>
+                          <a href="https://swedhag.github.io/dh2321-project2/" target="_blank"><li>Live demo</li></a>
+                          <a href="https://github.com/swedhag/dh2321-project2" target="_blank"><li>GitHub</li></a>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <!--MixAR-->
+          <div id="mixar" class="card">
+            <div class="box">
+              <div class="text">MixAR</div>
+              <p>Augmented reality</p>
+            </div>
+            <img src="images/project-thumbnails/mixar.png" alt="MixAR" class="thumbnail">
+            <div class="modal">
+              <div class="modal-content">
+                <div class="close"><i class="fas fa-times"></i></div>
+                  <div class="modal-media">
+                    <div class="iframe-container">
+                      <iframe src="https://www.youtube.com/embed/ge9gzYqq_Pc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <h2>MixAR - Augmented reality application</h2>
+                  <div class="modal-text">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus vitae minima repudiandae blanditiis cumque, obcaecati ullam nesciunt laudantium aspernatur libero porro recusandae aut inventore perferendis corporis accusamus distinctio eum maxime sed. Debitis eius nostrum, eos aperiam deleniti eaque magni natus inventore deserunt totam repellat amet pariatur vero vel esse velit necessitatibus, consectetur nam. Asperiores, modi eligendi atque voluptate ad distinctio ipsum maxime voluptatem recusandae. Rerum minima facere porro iure cum obcaecati in eius fugit ullam dignissimos pariatur itaque ratione numquam vitae corrupti, saepe consectetur, deserunt voluptates id iusto. Animi a quidem quod cumque ratione fugit, ex iure repudiandae ad tempore!</p>
+                    <div class="modal-meta">
+                      <div class="tools">
+                        <h3>Tools</h3>
+                        <ul>
+                          <li><img src="images/logos/unity.png" alt="unity"><span>Unity</span></li>
+                          <li><img src="images/logos/vuforia.png" alt="vuforia"><span>Vuforia</span></li>
+                          <li><img src="images/logos/csharp.png" alt="csharp"><span>C#</span></li>
+                        </ul>                
+                      </div>
+                      <div class="links">
+                        <h3>Links</h3>
+                        <ul>
+                          <a href="https://www.youtube.com/watch?v=ge9gzYqq_Pc&ab_channel=LucasAhlgren" target="_blank"><li>Video</li></a>
+                          <a href="https://drive.google.com/file/d/1Lf_YSWcHu3MfvYjDSMxXDHx4F9rB8xwo/view?usp=sharing" target="_blank"><li>Paper</li></a>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <!--TouARs-->
+          <div id="touars" class="card">
+            <div class="box">
+              <div class="text">TouARs</div>
+              <p>AR/Design mock-up</p>
+            </div>
+            <img src="images/project-thumbnails/TouARs.png" alt="TouARs" class="thumbnail">
+            <div class="modal">
+              <div class="modal-content">
+                <div class="close"><i class="fas fa-times"></i></div>
+                  <div class="modal-media">
+                    <div class="iframe-container">
+                      <iframe src="https://www.youtube.com/embed/ZikBu5HQtCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <h2>TouARs - AR design mock-up</h2>
+                  <div class="modal-text">
+                    <p>For this project, my team and I were interested in developing an Augmented Reality (AR) service. Due to the fact that some of us were history buffs, it was decided we should develop a virtual and historical tour guide. Along with the development of the AR service, we set out with the task of investigating the opportunity for services like this one to exist in the smart tourism industry of the near future. A qualitative study was consequently conducted, during which users got to interact with a small mock-up city tour, set up in one of the computer labs of KTH. The service was developed in Unity, along with the Vuforia AR SDK, and programmed in C#.</p>
+                    <div class="modal-meta">
+                      <div class="tools">
+                        <h3>Tools</h3>
+                        <ul>
+                          <li><img src="images/logos/unity.png" alt="unity"><span>Unity</span></li>
+                          <li><img src="images/logos/vuforia.png" alt="vuforia"><span>Vuforia</span></li>
+                          <li><img src="images/logos/csharp.png" alt="csharp"><span>C#</span></li>
+                        </ul>                
+                      </div>
+                      <div class="links">
+                        <h3>Links</h3>
+                        <ul>
+                          <a href="https://www.youtube.com/embed/ZikBu5HQtCo" target="_blank"><li>Video</li></a>
+                          <a href="https://drive.google.com/file/d/17dpwBQHaHF176vC0VvC41vkW6SuQKnRt/view?usp=sharing" target="_blank"><li>Paper</li></a>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Master Thesis-->
+          <div id="masterthesis" class="card">
+            <div class="box">
+              <div class="text">Animated 2D Visualization of Evolving Trees</div>
+              <p>Degree project/Master's thesis</p>
+            </div>
+            <img src="images/project-thumbnails/masterthesis.png" alt="masterthesis" class="thumbnail">
+            <div class="modal">
+              <div class="modal-content">
+                <div class="close"><i class="fas fa-times"></i></div>
+                  <div class="modal-media">
+                    <img src="images/project-big/wvsBig.png" alt="wvs.big">
+                  </div>
+                  <h2>Animated 2D Visualization of Evolving Trees</h2>
+                  <div class="modal-text">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus vitae minima repudiandae blanditiis cumque, obcaecati ullam nesciunt laudantium aspernatur libero porro recusandae aut inventore perferendis corporis accusamus distinctio eum maxime sed. Debitis eius nostrum, eos aperiam deleniti eaque magni natus inventore deserunt totam repellat amet pariatur vero vel esse velit necessitatibus, consectetur nam. Asperiores, modi eligendi atque voluptate ad distinctio ipsum maxime voluptatem recusandae. Rerum minima facere porro iure cum obcaecati in eius fugit ullam dignissimos pariatur itaque ratione numquam vitae corrupti, saepe consectetur, deserunt voluptates id iusto. Animi a quidem quod cumque ratione fugit, ex iure repudiandae ad tempore!</p>
+                    <div class="modal-meta">
+                      <div class="tools">
+                        <h3>Tools</h3>
+                        <ul>
+                          <li><img src="images/logos/java.png" alt="java"><span>Java</span></li>
+                          <li><img src="images/logos/inviwo.png" alt="inviwo"><span>Inviwo</span></li>
+                          <li><img src="images/logos/cpp.png" alt="cpp"><span>C++</span></li>
+                        </ul>                
+                      </div>
+                      <div class="links">
+                        <h3>Links</h3>
+                        <ul>
+                          <a href="https://github.com/swedhag/masterthesis" target="_blank"><li>GitHub</li></a>
+                          <a href="https://www.diva-portal.org/smash/get/diva2:1532714/FULLTEXT01.pdf" target="_blank"><li>Paper</li></a>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Pigman-->
+          <div id="pigman" class="card">
+            <div class="box">
+              <div class="text">Cloth Animation Algorithm</div>
+              <p>Computer graphics</p>
+            </div>
+            <img src="images/project-thumbnails/pigman.png" alt="pigman" class="thumbnail">
+            <div class="modal">
+              <div class="modal-content">
+                <div class="close"><i class="fas fa-times"></i></div>
+                  <div class="modal-media">
+                    <img src="images/project-big/pigmanBig.png" alt="pigman.big">
+                  </div>
+                  <h2>Cloth Animation Algorithm</h2>
+                  <div class="modal-text">
+                    <p>For this project, my friend and I were interested in developing a real-time cloth simulator. Besides just letting the cloth hang loose, we also wanted to enable cloth interactions with other forces than the gravitational. Hence, we implemented a collision detection algorithm for the cloth as well. Finally, our ideas materialized in the development of this cloth cape, attached to the back of our super hero, Pigman. The physical model used for the virtual cloth is known as the Mass Spring Model. Collision detection was accomplished through prohibiting invisible vertices in the cloth from passing through solid virtual geometry. This project was developed in Unity and coded with C#.</p>
+                    <div class="modal-meta">
+                      <div class="tools">
+                        <h3>Tools</h3>
+                        <ul>
+                          <li><img src="images/logos/unity.png" alt="unity"><span>Unity</span></li>
+                          <li><img src="images/logos/csharp.png" alt="csharp"><span>C#</span></li>
+                        </ul>                
+                      </div>
+                      <div class="links">
+                        <h3>Links</h3>
+                        <ul>
+                          <a href="https://drive.google.com/file/d/1kufmzHr9QDrsUa7ifAjikjBa4pYH8k9O/view?usp=sharing" target="_blank"><li>Unity package</li></a>
+                          <a href="https://drive.google.com/file/d/1EhbhX0cSgw-6FbvnodyEjMe-MLsBvE-T/view?usp=sharing" target="_blank"><li>Paper</li></a>
+                          <a href="https://capemiddleton.home.blog/" target="_blank"><li>Blog</li></a>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer id="contact">
+      <div class="footer-content">
+        <div class="left box">
+          <h2>Links</h2>
+          <div class="content">
+            <p>Lastly, here's some general links that might come in handy when trying to get in touch with me. </p>
+            <div class="social">
+              <a href="#"><span class="fab fa-linkedin"></span></a>
+              <a href="#"><span class="fab fa-github"></span></a>
+              <a href="#"><span class="fab fa-facebook-f"></span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="center box">
+          <h2>Contact</h2>
+          <div class="content">
+            <div class="place">
+              <span class="fas fa-map-marker-alt"></span>
+              <span class="text">Stockholm, Sweden</span>
+            </div>
+            <div class="phone">
+              <span class="fas fa-phone-alt"></span>
+              <span class="text">+46 - 707 99 82 15</span>
+            </div>
+            <div class="email">
+              <span class="fas fa-envelope"></span>
+              <span class="text">calle.svedhag@live.se</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="right box">
+          <h2>Message me</h2>
+          <div class="content">
+            <form action="#">
+              <div class="email">
+                <div class="text">Email *</div>
+                <input type="email" name="email" required>
+              </div>
+                <div class="msg">
+                  <div class="text">Message *</div>
+                  <textarea cols="25" rows="2" name="message" required></textarea>
+                </div>
+                <div class="footer-btn">
+                  <button type="submit">Send</button>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <center>
+          <span class="far fa-copyright"></span>
+          <span>Carl Svedhag 2021</span>
+        </center>
+      </div>
+    </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
