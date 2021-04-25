@@ -215,6 +215,7 @@ section .title::after {
 
 .about .about-content .right p {
     text-align: justify;
+    margin-bottom: 7px;
 }
 
 .about .about-content .right a {
@@ -464,7 +465,7 @@ footer {
 .footer-content .right form .text {
     font-size: 1.0625rem;
     margin-bottom: 2px;
-    color: #656565;
+    color: #f5f5f5;
 }
 
 .footer-content .right form .msg {
@@ -477,17 +478,29 @@ footer {
     background: #151515;
     color: #f5f5f5;
     padding-left: 10px;
-    border: 1px solid #222222;
+    border: 1px solid #f5f5f5;
 }
+
 .footer-content .right form input {
     height: 35px;
 }
+
+.missing-input {
+    animation: missing-input-animation 1s 1;
+    
+}
+
+@keyframes missing-input-animation {
+    0% { background: #151515; opacity: 1;}
+    50% { background:#ff533d; opacity: 0.9;}
+    100% { background: #151515; opacity: 1;}
+  }
 
 .footer-content .right form .footer-btn {
     margin-top: 10px;
 }
 
-.footer-content .right form .footer-btn  button{
+.footer-content .right form .footer-btn  input{
     color: #f5f5f5;
     height: 40px;
     width: 100%;
@@ -503,8 +516,9 @@ footer {
     transition: 0.3s;
 }
 
-.footer-content .right form .footer-btn button:hover { 
-    background: none;
+.footer-content .right form .footer-btn input:hover { 
+    background: #f5f5f5;
+    color: #ff533d;
 }
 
 .bottom center {

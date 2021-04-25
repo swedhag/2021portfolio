@@ -61,7 +61,47 @@ $(document).ready(function(){
                 var src= $(this).attr('src');
         $(this).attr('src',src);  */
 
-});
+    //Messaging
+    $("div.footer-btn input").click(() => {
+      var from = $("input[name='email']");
+      var body = $("textarea[name='message']");
+      if( from.val() === "" && body.val() === "" ) {
+        from.addClass("missing-input");
+        body.addClass("missing-input");
+        setTimeout(() => {from.removeClass("missing-input"); body.removeClass("missing-input");}, 1000);
+      }
+      else if ( from.val() === "" && body.val() !== "" ) {
+        from.addClass("missing-input");
+        setTimeout(() => {from.removeClass("missing-input")}, 1000);
+      }
+      else if ( from.val() !== "" && body.val() === "" ) {
+        body.addClass("missing-input");
+        setTimeout(() => {body.removeClass("missing-input")}, 1000);
+      }
+      else {
+        //Check formatting of email
+        const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        var format = re.test(String(from.val()).toLowerCase());
+        if (format === true) {
+          Email.send({
+            SecureToken : "cd5e643b-b21b-4a95-a4e5-4b696f8f9032",
+            To : 'calle.svedhag@live.se',
+            From : "carlsvedhag@gmail.com",
+            Subject : "Portfolio message from " + from.val(),
+            Body : body.val()
+          }).then(
+            message => alert("Your message has been sent to me. I will try to get back to you as soon as possible."),
+            body.val(""),
+            from.val(""))
+        }
+        else {
+          from.addClass("missing-input");
+          setTimeout(() => {from.removeClass("missing-input")}, 1000);
+        }
+      }
+    });
+
+  });
 
     //smooth scrolling
     $('a[href*="#"]')

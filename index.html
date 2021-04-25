@@ -7,9 +7,11 @@
   <title>Carl Svedhag - Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="shortcut icon" type="image/jpg" href="images/suitcase.png"/>
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 
 <body>
@@ -50,16 +52,22 @@
             <img src="images/calle.png" alt="profile-pic">
           </div>
           <div class="column right">
-            <div class="text">I'm Calle and I'm a <span class="typing2"></span></div>
-            <p>I'm a 25 year old Swedish engineer with a passion for technology, coding and engaging in meaningful work alongside other people. 
-              My academic intrest in science and technology started early and has gradually been increasing since my start at the natural sciences programme at the prestigeous Norra Real 
-              high school in the city centre of Stockholm. Following my time at Norra Real, I moved location a couple of blocks to the northwest to attend the media technology programme at the
-              Royal Institute of Technology (KTH.) At KTH, I have acquired a multitude of skills relating to media technology, human-computer interaction and user experience (UX.) Projects I have been
-              apart of spans everything from web development and interaction design to information visualization, augmented reality, computer graphics, image- and video processing etc. In the spring of 2021,
-              I finally received my Degree of Master of Science with a major in Computer Science and Engineering. Below, you find some examples of my previous work!
+            <div class="text">I'm Carl and I'm a <span class="typing2"></span></div>
+            <p>
+              I'm a 25 year old Swedish engineer with a passion for technology, coding and engaging in meaningful work alongside other people. 
+              My academic intrest in science and technology started early and has gradually increased since my start at the natural sciences programme of the prestigeous Norra Real 
+              high school in the city centre of Stockholm.
+            </p>
+            <p>
+              Following my time at Norra Real, I moved location a couple of blocks to the northwest to attend the media technology programme at the
+              Royal Institute of Technology KTH. At KTH, I have acquired a multitude of skills relating to media technology, software development, human-computer interaction and UX. Projects I have been
+              apart of spans everything from applied computer science and web development to interaction design, information visualization, augmented reality, computer graphics, image- and video processing etc. Tools that I have previous experience with are:
+              HTML, CSS, Bootstrap, Javascript, jQuery, D3.js, React.js, Python, C#, C++, Java, MatLab, SQL, XML, PHP, Unity, OpenGL, Inviwo, Vuforia, GitHub, LaTeX, Sketch etc.
 
-              In my spare time, I enjoy either watching or playing a friendly game of football, practice my guitar-playing or to simply lean back in the sofa and watch a good movie. I played
-              football competitevly  
+            </p>
+            <p>
+              In the spring of 2021,
+              I finally received my Degree of Master of Science with a major in Computer Science and Engineering. Below, you will find some examples of my previous work!
             </p>
             <a href="#">Download CV</a>
           </div>
@@ -90,7 +98,7 @@
                   </div>
                   <h2>jobVis - Information visualization</h2>
                   <div class="modal-text">
-                    <p>My team and I, who had been asked to develop and design a fully functioning analysis tool for the sales department at Blocket Jobb, made this service in the spring of 2019. The intended use of the tool is to map the quantity of employment ads posted on Blocket Jobb to its corresponding geographical location. Filtering of this data can be done through line of businesses and sub-categories of lines - as well as by trends in employment ads over time. Two modes of comparison is made available by the analysis tool. Users can either filter the data by ads posted over a time span, or by ad post derivatives over a time span. This project was developed with JavaScript and D3.js.</p>
+                    <p>My team and I, who had been asked to develop and design a fully functioning analysis tool for the sales department at Blocket Jobb, made this service in the spring of 2019. The intended use of the tool is to map the quantity of employment ads posted on Blocket Jobb to its corresponding geographical location. Filtering of this data can be done through line of businesses and sub-categories of lines - as well as by trends in employment ads over time. Two modes of comparison is made available by the analysis tool. Users can either filter the data by ads posted over a time span, or by ad post derivatives over a time span. The bulk of the project was created with JavaScript and D3.js.</p>
                     <div class="modal-meta">
                       <div class="tools">
                         <h3>Tools</h3>
@@ -130,7 +138,7 @@
                   </div>
                   <h2>World Values Survey visualization</h2>
                   <div class="modal-text">
-                    <p>For this project, I was interested in investigating the political, but also cultural climate of the countries included in the WVS (World Values Survey). A good dataset, spanning the 4 latest documented waves, or time periods, of the WVS was the one regarding active memberships in voluntary organizations. The project visualizes multivariate data, for which an appropriate visualization method is the parallel coordinate system. The interactive visualization supports both filtering by brushing and by using the search bar. Detailed information about each country is made available upon clicking a country's name. This project was developed with JavaScript and D3.js.</p>
+                    <p>For this project, I was interested in investigating the political, but also cultural climate of the countries included in the WVS (World Values Survey). A good dataset, spanning the 4 latest documented waves, or time periods, of the WVS was the one regarding active memberships in voluntary organizations. The project visualizes multivariate data, for which an appropriate visualization method is the parallel coordinate system. The interactive visualization supports both filtering by brushing and by using the search bar. Detailed information about each country is made available upon clicking a country's name. This project was primarily developed with JavaScript and D3.js.</p>
                     <div class="modal-meta">
                       <div class="tools">
                         <h3>Tools</h3>
@@ -171,7 +179,7 @@
                   </div>
                   <h2>MixAR - Augmented reality application</h2>
                   <div class="modal-text">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus vitae minima repudiandae blanditiis cumque, obcaecati ullam nesciunt laudantium aspernatur libero porro recusandae aut inventore perferendis corporis accusamus distinctio eum maxime sed. Debitis eius nostrum, eos aperiam deleniti eaque magni natus inventore deserunt totam repellat amet pariatur vero vel esse velit necessitatibus, consectetur nam. Asperiores, modi eligendi atque voluptate ad distinctio ipsum maxime voluptatem recusandae. Rerum minima facere porro iure cum obcaecati in eius fugit ullam dignissimos pariatur itaque ratione numquam vitae corrupti, saepe consectetur, deserunt voluptates id iusto. Animi a quidem quod cumque ratione fugit, ex iure repudiandae ad tempore!</p>
+                    <p>For MixAR, the goal was to create an application with multiple channels of interactivity for the KTH course Multimodal Interactions and Interfaces (DT2140). Hence, an idea was sprung of letting users interact with a virtual music band, as if they part of the band themselves. As is shown in the video, AR instruments are revealed once the corresponding markers have been recognized. The user can then tap instruments to turn them on and off, move around the room to experience 3D sound efffects, and experiment with other effects such as reverb. Fun fact: you see me interacting with the application in the video above. MixAR was created with Unity, Vuforia and C#.</p>
                     <div class="modal-meta">
                       <div class="tools">
                         <h3>Tools</h3>
@@ -245,11 +253,13 @@
               <div class="modal-content">
                 <div class="close"><i class="fas fa-times"></i></div>
                   <div class="modal-media">
-                    <img src="images/project-big/wvsBig.png" alt="wvs.big">
+                    <div class="iframe-container">
+                      <iframe src="https://www.youtube.com/embed/goTFbFOhOqA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                   </div>
                   <h2>Animated 2D Visualization of Evolving Trees</h2>
                   <div class="modal-text">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus vitae minima repudiandae blanditiis cumque, obcaecati ullam nesciunt laudantium aspernatur libero porro recusandae aut inventore perferendis corporis accusamus distinctio eum maxime sed. Debitis eius nostrum, eos aperiam deleniti eaque magni natus inventore deserunt totam repellat amet pariatur vero vel esse velit necessitatibus, consectetur nam. Asperiores, modi eligendi atque voluptate ad distinctio ipsum maxime voluptatem recusandae. Rerum minima facere porro iure cum obcaecati in eius fugit ullam dignissimos pariatur itaque ratione numquam vitae corrupti, saepe consectetur, deserunt voluptates id iusto. Animi a quidem quod cumque ratione fugit, ex iure repudiandae ad tempore!</p>
+                    <p>For my Master's Thesis, supervised by visualization professor Tino Weinkauf at the computational science and technology division at EECS, I was tasked with optimizing the stability of animated treemaps. Treemaps are a common tool for visuzaling hierarchical datasets, but in the case where the hierarchy of this data is time-dependently changing, discontinuities in the animation may occur. Examples of this can be seen around the 1990 mark of the disorded treemap in the above video. My assignment was to remove these discontinuities from the animation, and thus increasing the animated stability. The stability optimization was accomplish by translating the results of the Temporal Treemaps research by Weinkauf and Köpp, from the 1D space of their algorithm to the 2D space of treemap animations. For more in-depth information about my thesis project, I suggest you have a look at the paper.</p>
                     <div class="modal-meta">
                       <div class="tools">
                         <h3>Tools</h3>
@@ -360,7 +370,7 @@
                   <textarea cols="25" rows="2" name="message" required></textarea>
                 </div>
                 <div class="footer-btn">
-                  <button type="submit">Send</button>
+                  <input type="button" value="Send"/>
                 </div>
             </form>
           </div>
