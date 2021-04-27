@@ -96,14 +96,21 @@
 .home {
     display:flex;
     min-height: 500px;
-    background: url("images/pexels-photo-238118.jpeg") no-repeat center;
+    background: url("images/banner.jpg") no-repeat center;
     background-size: cover;
+    background-position: top center;
     /*background-color: #EEEEEE;*/
     font-family: "Ubuntu", sans-serif;
 }
 
 .home .max-width {
     margin: auto 0 auto 40px;
+}
+
+.home .home-content {
+    background: rgb(245, 245, 245, 0.7);
+    padding: 10px;
+    border-radius: 6px;
 }
 
 .home .home-content .text-1{
@@ -196,6 +203,7 @@ section .title::after {
     height: 400px;
     width: 400px;
     object-fit: cover;
+    object-position: 50% 5%;
     border-radius: 6px;
 }
 
@@ -819,6 +827,12 @@ footer {
 
 /* responsive */
 
+@media (max-width: 1061px ){ 
+    .about {
+        height: 100%;
+    }
+}
+
 @media (max-width: 1061px ){
     .modal-content .modal-text {
         display: inline-block;
@@ -986,6 +1000,10 @@ footer {
     
     .home .home-content .text-3{
         font-size: 22px;
+    }
+    
+    .about .about-content .right .text {
+        height: 70px;
     }
 }
 

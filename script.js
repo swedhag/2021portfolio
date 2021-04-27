@@ -55,12 +55,6 @@ $(document).ready(function(){
       }
     });
 
-    /*document.getElementById('video-iframe'+id).contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
-        }
-        
-                var src= $(this).attr('src');
-        $(this).attr('src',src);  */
-
     //Messaging
     $("div.footer-btn input").click(() => {
       var from = $("input[name='email']");

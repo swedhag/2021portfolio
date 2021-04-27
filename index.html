@@ -49,7 +49,7 @@
         <h2 class="title">About me</h2>
         <div class="about-content">
           <div class="column left">
-            <img src="images/calle.png" alt="profile-pic">
+            <img src="images/newpic.jpg" alt="profile-pic">
           </div>
           <div class="column right">
             <div class="text">I'm Carl and I'm a <span class="typing2"></span></div>
@@ -62,7 +62,7 @@
               Following my time at Norra Real, I moved location a couple of blocks to the northwest to attend the media technology programme at the
               Royal Institute of Technology KTH. At KTH, I have acquired a multitude of skills relating to media technology, software development, human-computer interaction and UX. Projects I have been
               apart of spans everything from applied computer science and web development to interaction design, information visualization, augmented reality, computer graphics, image- and video processing etc. Tools that I have previous experience with are:
-              HTML, CSS, Bootstrap, Javascript, jQuery, D3.js, React.js, Python, C#, C++, Java, MatLab, SQL, XML, PHP, Unity, OpenGL, Inviwo, Vuforia, GitHub, LaTeX, Sketch etc.
+              HTML, CSS, Bootstrap, Javascript, jQuery, D3.js, React.js, Python, Java, C++, C#, MatLab, PHP, SQL, XML, XSL, Unity, OpenGL, Inviwo, Vuforia, GitHub, LaTeX, Sketch etc.
 
             </p>
             <p>
@@ -123,37 +123,38 @@
             </div>
           </div>
 
-          <!--World Values Survey Visualization-->
-          <div id="wvs" class="card">
+          <!--Master Thesis-->
+          <div id="masterthesis" class="card">
             <div class="box">
-              <div class="text">World Values Survey Visualization</div>
-              <p>Web application</p>
+              <div class="text">Animated 2D Visualization of Evolving Trees</div>
+              <p>Degree project/Master's thesis</p>
             </div>
-            <img src="images/project-thumbnails/wvs.png" alt="wvs" class="thumbnail">
+            <img src="images/project-thumbnails/masterthesis.png" alt="masterthesis" class="thumbnail">
             <div class="modal">
               <div class="modal-content">
                 <div class="close"><i class="fas fa-times"></i></div>
                   <div class="modal-media">
-                    <img src="images/project-big/wvsBig.png" alt="wvs.big">
+                    <div class="iframe-container">
+                      <iframe src="https://www.youtube.com/embed/goTFbFOhOqA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                   </div>
-                  <h2>World Values Survey visualization</h2>
+                  <h2>Animated 2D Visualization of Evolving Trees</h2>
                   <div class="modal-text">
-                    <p>For this project, I was interested in investigating the political, but also cultural climate of the countries included in the WVS (World Values Survey). A good dataset, spanning the 4 latest documented waves, or time periods, of the WVS was the one regarding active memberships in voluntary organizations. The project visualizes multivariate data, for which an appropriate visualization method is the parallel coordinate system. The interactive visualization supports both filtering by brushing and by using the search bar. Detailed information about each country is made available upon clicking a country's name. This project was primarily developed with JavaScript and D3.js.</p>
+                    <p>For my Master's Thesis, supervised by visualization professor Tino Weinkauf at the computational science and technology division at EECS, I was tasked with optimizing the stability of animated treemaps. Treemaps are a common tool for visuzaling hierarchical datasets, but in the case where the hierarchy of this data is time-dependently changing, discontinuities in the animation may occur. Examples of this can be seen around the 1990 mark of the disorded treemap in the above video. My assignment was to remove these discontinuities from the animation, and thus increasing the animated stability. The stability optimization was accomplish by translating the results of the Temporal Treemaps research by Weinkauf and Köpp, from the 1D space of their algorithm to the 2D space of treemap animations. For more in-depth information about my thesis project, I suggest you have a look at the paper.</p>
                     <div class="modal-meta">
                       <div class="tools">
                         <h3>Tools</h3>
                         <ul>
-                          <li><img src="images/logos/html.svg" alt="html"><span>HTML</span></li>
-                          <li><img src="images/logos/css.svg" alt="css"><span>CSS</span></li>
-                          <li><img src="images/logos/js.svg" alt="js"><span>JavaScript</span></li>
-                          <li><img src="images/logos/d3.png" alt="d3"><span>d3.js</span></li>
+                          <li><img src="images/logos/java.png" alt="java"><span>Java</span></li>
+                          <li><img src="images/logos/inviwo.png" alt="inviwo"><span>Inviwo</span></li>
+                          <li><img src="images/logos/cpp.png" alt="cpp"><span>C++</span></li>
                         </ul>                
                       </div>
                       <div class="links">
                         <h3>Links</h3>
                         <ul>
-                          <a href="https://swedhag.github.io/dh2321-project2/" target="_blank"><li>Live demo</li></a>
-                          <a href="https://github.com/swedhag/dh2321-project2" target="_blank"><li>GitHub</li></a>
+                          <a href="https://github.com/swedhag/masterthesis" target="_blank"><li>GitHub</li></a>
+                          <a href="https://www.diva-portal.org/smash/get/diva2:1532714/FULLTEXT01.pdf" target="_blank"><li>Paper</li></a>
                         </ul>
                       </div>
                     </div>
@@ -202,6 +203,45 @@
             </div>
           </div>
 
+           <!--World Values Survey Visualization-->
+           <div id="wvs" class="card">
+            <div class="box">
+              <div class="text">World Values Survey Visualization</div>
+              <p>Web application</p>
+            </div>
+            <img src="images/project-thumbnails/wvs.png" alt="wvs" class="thumbnail">
+            <div class="modal">
+              <div class="modal-content">
+                <div class="close"><i class="fas fa-times"></i></div>
+                  <div class="modal-media">
+                    <img src="images/project-big/wvsBig.png" alt="wvs.big">
+                  </div>
+                  <h2>World Values Survey visualization</h2>
+                  <div class="modal-text">
+                    <p>For this project, I was interested in investigating the political, but also cultural climate of the countries included in the WVS (World Values Survey). A good dataset, spanning the 4 latest documented waves, or time periods, of the WVS was the one regarding active memberships in voluntary organizations. The project visualizes multivariate data, for which an appropriate visualization method is the parallel coordinate system. The interactive visualization supports both filtering by brushing and by using the search bar. Detailed information about each country is made available upon clicking a country's name. This project was primarily developed with JavaScript and D3.js.</p>
+                    <div class="modal-meta">
+                      <div class="tools">
+                        <h3>Tools</h3>
+                        <ul>
+                          <li><img src="images/logos/html.svg" alt="html"><span>HTML</span></li>
+                          <li><img src="images/logos/css.svg" alt="css"><span>CSS</span></li>
+                          <li><img src="images/logos/js.svg" alt="js"><span>JavaScript</span></li>
+                          <li><img src="images/logos/d3.png" alt="d3"><span>d3.js</span></li>
+                        </ul>                
+                      </div>
+                      <div class="links">
+                        <h3>Links</h3>
+                        <ul>
+                          <a href="https://swedhag.github.io/dh2321-project2/" target="_blank"><li>Live demo</li></a>
+                          <a href="https://github.com/swedhag/dh2321-project2" target="_blank"><li>GitHub</li></a>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
           <!--TouARs-->
           <div id="touars" class="card">
             <div class="box">
@@ -234,46 +274,6 @@
                         <ul>
                           <a href="https://www.youtube.com/embed/ZikBu5HQtCo" target="_blank"><li>Video</li></a>
                           <a href="https://drive.google.com/file/d/17dpwBQHaHF176vC0VvC41vkW6SuQKnRt/view?usp=sharing" target="_blank"><li>Paper</li></a>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-            </div>
-          </div>
-
-          <!--Master Thesis-->
-          <div id="masterthesis" class="card">
-            <div class="box">
-              <div class="text">Animated 2D Visualization of Evolving Trees</div>
-              <p>Degree project/Master's thesis</p>
-            </div>
-            <img src="images/project-thumbnails/masterthesis.png" alt="masterthesis" class="thumbnail">
-            <div class="modal">
-              <div class="modal-content">
-                <div class="close"><i class="fas fa-times"></i></div>
-                  <div class="modal-media">
-                    <div class="iframe-container">
-                      <iframe src="https://www.youtube.com/embed/goTFbFOhOqA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                  </div>
-                  <h2>Animated 2D Visualization of Evolving Trees</h2>
-                  <div class="modal-text">
-                    <p>For my Master's Thesis, supervised by visualization professor Tino Weinkauf at the computational science and technology division at EECS, I was tasked with optimizing the stability of animated treemaps. Treemaps are a common tool for visuzaling hierarchical datasets, but in the case where the hierarchy of this data is time-dependently changing, discontinuities in the animation may occur. Examples of this can be seen around the 1990 mark of the disorded treemap in the above video. My assignment was to remove these discontinuities from the animation, and thus increasing the animated stability. The stability optimization was accomplish by translating the results of the Temporal Treemaps research by Weinkauf and Köpp, from the 1D space of their algorithm to the 2D space of treemap animations. For more in-depth information about my thesis project, I suggest you have a look at the paper.</p>
-                    <div class="modal-meta">
-                      <div class="tools">
-                        <h3>Tools</h3>
-                        <ul>
-                          <li><img src="images/logos/java.png" alt="java"><span>Java</span></li>
-                          <li><img src="images/logos/inviwo.png" alt="inviwo"><span>Inviwo</span></li>
-                          <li><img src="images/logos/cpp.png" alt="cpp"><span>C++</span></li>
-                        </ul>                
-                      </div>
-                      <div class="links">
-                        <h3>Links</h3>
-                        <ul>
-                          <a href="https://github.com/swedhag/masterthesis" target="_blank"><li>GitHub</li></a>
-                          <a href="https://www.diva-portal.org/smash/get/diva2:1532714/FULLTEXT01.pdf" target="_blank"><li>Paper</li></a>
                         </ul>
                       </div>
                     </div>
@@ -320,6 +320,84 @@
             </div>
           </div>
 
+          <!--Habits-->
+          <div id="habits" class="card">
+            <div class="box">
+              <div class="text">Habits</div>
+              <p>UX Design</p>
+            </div>
+            <img src="images/project-thumbnails/habits.png" alt="habits" class="thumbnail">
+            <div class="modal">
+              <div class="modal-content">
+                <div class="close"><i class="fas fa-times"></i></div>
+                  <div class="modal-media">
+                    <div class="iframe-container">
+                      <iframe src="https://www.youtube.com/embed/Y0qqFrEUXxM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <h2>Habits design proposal</h2>
+                  <div class="modal-text">
+                    <p>For this design project I, alongside a group of friends, was tasked by the company HabitWise to make grounded suggestions of design improvements for their climate calculator application Habits. Apart from being a climate calculator, another purpose of the application was to encourage its users to act more sustainable, by providing tasks and challenges that in the long run would alter the day-to-day behaviours of users. However, up until the point at which we started working on the project, the tasks and challenges had primarily been used at offices in a very competitive sense. What we instead sought to accomplish with our design proposal, were ways in which app users could experience self-fulfillment completely on their own terms. To learn more about our reasoning, please have a look at the video above and the attached paper.</p>
+                    <div class="modal-meta">
+                      <div class="tools">
+                        <h3>Tools</h3>
+                        <ul>
+                          <li><img src="images/logos/figma.svg" alt="figma"><span>Figma</span></li>
+                        </ul>                
+                      </div>
+                      <div class="links">
+                        <h3>Links</h3>
+                        <ul>
+                          <a href="https://www.figma.com/proto/SiHCwqDe08PIOMcLzxJ7I2/habits?node-id=2%3A2&scaling=min-zoom&page-id=0%3A1" target="_blank"><li>Wireframe</li></a>
+                          <a href="https://drive.google.com/file/d/1wWwn4cKtXmLzCgZX-NSC4hRvEyZ8FFEK/view?usp=sharing" target="_blank"><li>Paper</li></a>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <!--XML-->
+          <div id="xml" class="card">
+            <div class="box">
+              <div class="text">Allsvenskan encyclopedia</div>
+              <p>Databases/XML</p>
+            </div>
+            <img src="images/project-thumbnails/xml.png" alt="xml" class="thumbnail">
+            <div class="modal">
+              <div class="modal-content">
+                <div class="close"><i class="fas fa-times"></i></div>
+                  <div class="modal-media">
+                    <div class="iframe-container">
+                      <iframe src="https://www.youtube.com/embed/Bhhzuz9X2Ho" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <h2>Allsvenskan encyclopedia</h2>
+                  <div class="modal-text">
+                    <p>For this project, my friend and I were interested in developing a real-time cloth simulator. Besides just letting the cloth hang loose, we also wanted to enable cloth interactions with other forces than the gravitational. Hence, we implemented a collision detection algorithm for the cloth as well. Finally, our ideas materialized in the development of this cloth cape, attached to the back of our super hero, Pigman. The physical model used for the virtual cloth is known as the Mass Spring Model. Collision detection was accomplished through prohibiting invisible vertices in the cloth from passing through solid virtual geometry. This project was developed in Unity and coded with C#.</p>
+                    <div class="modal-meta">
+                      <div class="tools">
+                        <h3>Tools</h3>
+                        <ul>
+                          <li><img src="images/logos/xml.png" alt="xml"><span>XML</span></li>
+                          <li><img src="images/logos/xsl.png" alt="xslt"><span>XSL</span></li>
+                          <li><img src="images/logos/css.svg" alt="css"><span>CSS</span></li>
+                          <li><img src="images/logos/sql.png" alt="sql"><span>SQL</span></li>
+                          <li><img src="images/logos/mysql.png" alt="mysql"><span>MySQL</span></li>
+                        </ul>                
+                      </div>
+                      <div class="links">
+                        <h3>Links</h3>
+                        <ul>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -332,9 +410,9 @@
           <div class="content">
             <p>Lastly, here's some general links that might come in handy when trying to get in touch with me. </p>
             <div class="social">
-              <a href="#"><span class="fab fa-linkedin"></span></a>
-              <a href="#"><span class="fab fa-github"></span></a>
-              <a href="#"><span class="fab fa-facebook-f"></span></a>
+              <a href="https://se.linkedin.com/in/carl-svedhag-2a4934109" target="_blank"><span class="fab fa-linkedin"></span></a>
+              <a href="https://github.com/swedhag" target="_blank"><span class="fab fa-github"></span></a>
+              <a href="https://www.facebook.com/csvedhag" target="_blank"><span class="fab fa-facebook-f"></span></a>
             </div>
           </div>
         </div>
