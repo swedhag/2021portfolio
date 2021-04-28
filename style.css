@@ -1025,6 +1025,17 @@ footer {
     .home .home-content .text-3{
         font-size: 19px;
     }
+
+    .modal .modal-content .modal-text {
+        margin-top: 0px;
+    }
+
+    .modal .modal-content h2 {
+        margin-bottom: 15px;
+    }
+    .modal .modal-content h2::before, .modal .modal-content h2::after {
+        top: 55px;
+    }
     
 }
 
@@ -1032,20 +1043,62 @@ footer {
     .modal .modal-content {
         margin-top: 25%;
     }
-}
 
-@media (max-width: 382px ) {
-    .modal .modal-content .modal-text {
-        margin-top: 0px;
+    .services .serv-content .card {
+        width: 309.1px;
+        height: 257.6px;
     }
 
-    .modal .modal-content h2::before, .modal .modal-content h2::after {
-        top: 55px;
+    .services .serv-content .card .thumbnail {
+        max-width: 309.1px;
+        max-height: 257.6px;
+    }
+
+    .services .serv-content .card:hover .box {
+        width: 309.1px;
+        height: 257.6px;
+    }
+}
+
+@media (max-width: 390px ) {
+
+}
+
+@media (max-width: 340px ){ 
+    section .title {
+        font-size: 30px;
+    }
+    section .title::before {
+        width: 120px;
+        height: 2px;
+    }
+    section .title::after {
+        font-size: 14px;
+        font-weight: 600;
+        bottom: -10px;
+    }
+
+    .services .serv-content .card {
+        width: 283.33px;
+        height: 236.1px;
+    }
+
+    .services .serv-content .card .thumbnail {
+        max-width: 283.33px;
+        max-height: 236.1px;
+    }
+
+    
+    .services .serv-content .card:hover .box {
+        width: 283.33px;
+        height: 236.1px;
     }
 }
 
 @media (max-width: 320px ){ 
     .modal .modal-content {
-        margin-top: 30%;
+        margin: auto;
+        margin-top:30%;
+        width: 100%;
     }
 }
