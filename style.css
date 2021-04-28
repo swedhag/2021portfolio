@@ -109,13 +109,14 @@
 /* home */
 
 .home {
-    display:flex;
+    display: flex;
     min-height: 500px;
-    background: url("images/banner3.jpg") no-repeat;
+    background: url("images/banner.jpg") no-repeat;
     background-size: cover;
     background-position: top center;
     /*background-color: #EEEEEE;*/
     font-family: "Ubuntu", sans-serif;
+    padding-top: 150px;
 }
 
 .home .max-width {
@@ -258,26 +259,26 @@ section .title::after {
     background: none;
 }
 
-/* services */
+/* projects */
 
-.services {
+.projects {
     font-family: "Poppins", sans-serif;
     background-color: #EEEEEE;
     height:100%;
 }
 
-.services .title::after {
+.projects .title::after {
     content: "what I've done";
     background: #EEEEEE;
 }
-.services .serv-content {
+.projects .proj-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
-.services .serv-content .card {
+.projects .proj-content .card {
     width: 340px;
     height: 283.33px;
     margin-left: clamp(15px, 5%, 15px);
@@ -293,16 +294,16 @@ section .title::after {
     box-shadow: 3px 3px 3px 3px grey;
 }
 
-.services .serv-content .card .thumbnail {
+.projects .proj-content .card .thumbnail {
     max-width: 340px;
     max-height: 283.33px;
 }
 
-.services .serv-content .card .box {
+.projects .proj-content .card .box {
     display: none;
 }
 
-.services .serv-content .card .box .text{
+.projects .proj-content .card .box .text{
     margin: auto;
     font-size: 22px;
     line-height: 20px;
@@ -312,12 +313,12 @@ section .title::after {
     padding: auto;
 } 
 
-.services .serv-content .card .box .text span {
+.projects .proj-content .card .box .text span {
     display: inline-block;
     vertical-align: middle;
 }
 
-.services .serv-content .card .box p{
+.projects .proj-content .card .box p{
     display: inline-block;
     margin-top: 5px;
     font-size: 14px;
@@ -327,7 +328,7 @@ section .title::after {
     border-radius: 10px;
 } 
 
-.services .serv-content .card:hover .box {
+.projects .proj-content .card:hover .box {
     position: absolute;
     display:block;
     width: 340px;
@@ -345,7 +346,7 @@ section .title::after {
 }
 
 
-.services .serv-content .card .box .text, .services .serv-content .card .box p{
+.projects .proj-content .card .box .text, .projects .proj-content .card .box p{
     animation: new-item-animation .3s linear forwards;
 }
 
@@ -361,18 +362,7 @@ section .title::after {
     }
 }
 
-/*
-.services .serv-content .card i {
-    font-size: 50px;
-    color: #ff533d;
-    transition: color 0.3s ease;
-}
-
-.services .serv-content .card:hover i {
-    color: blue;
-}
-*/
-.services .serv-content .card .text {
+.projects .proj-content .card .text {
     display:block;
     font-size: 25px;
     font-weight: 500;
@@ -628,7 +618,7 @@ footer {
     position: absolute;
     content: "";
     height: 2px;
-    top: 40px;
+    top: 80%;
     width: 100%;
     background: #0f1626;
 }
@@ -639,7 +629,7 @@ footer {
     height: 2px;
     width: 25%;
     background: #ff533d;
-    top: 40px;
+    top: 80%;
     left: 0px;
 }
 
@@ -1048,9 +1038,6 @@ footer {
     .modal .modal-content h2 {
         margin-bottom: 15px;
     }
-    .modal .modal-content h2::before, .modal .modal-content h2::after {
-        top: 55px;
-    }
     
 }
 
@@ -1059,17 +1046,17 @@ footer {
         margin-top: 25%;
     }
 
-    .services .serv-content .card {
+    .projects .proj-content .card {
         width: 309.1px;
         height: 257.6px;
     }
 
-    .services .serv-content .card .thumbnail {
+    .projects .proj-content .card .thumbnail {
         max-width: 309.1px;
         max-height: 257.6px;
     }
 
-    .services .serv-content .card:hover .box {
+    .projects .proj-content .card:hover .box {
         width: 309.1px;
         height: 257.6px;
     }
@@ -1093,18 +1080,18 @@ footer {
         bottom: -10px;
     }
 
-    .services .serv-content .card {
+    .projects .proj-content .card {
         width: 283.33px;
         height: 236.1px;
     }
 
-    .services .serv-content .card .thumbnail {
+    .projects .proj-content .card .thumbnail {
         max-width: 283.33px;
         max-height: 236.1px;
     }
 
     
-    .services .serv-content .card:hover .box {
+    .projects .proj-content .card:hover .box {
         width: 283.33px;
         height: 236.1px;
     }
