@@ -116,6 +116,8 @@ $(document).ready(function(){
         if (target.length) {
           // Only prevent default if animation is actually gonna happen
           event.preventDefault();
+          $(".navbar .menu").removeClass("active");
+          $(".menu-btn i").removeClass("active");
           $('html, body').animate({
             scrollTop: target.offset().top
           }, 1000, function() {

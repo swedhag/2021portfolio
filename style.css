@@ -63,6 +63,15 @@
     transition: color 0.3s ease;
 }
 
+.navbar .menu-btn {
+    color: #0f1626;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu-btn:hover {
+    color: #ff533d;
+}
+
 .navbar.sticky li a {
     color: #f5f5f5;
     transition: all 0.3s ease;
@@ -77,6 +86,12 @@
     color: #f5f5f5;
     transition: all 0.3s ease;
 }
+
+
+.navbar.sticky .menu-btn:hover {
+    color: #ff533d;
+}
+
 .navbar .menu li a:hover{
     color: #ff533d;
 
